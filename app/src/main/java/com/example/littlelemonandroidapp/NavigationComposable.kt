@@ -23,7 +23,7 @@ fun NavigationComposable(context: Context) {
     ) {
         // Define navigation routes for each destination
         composable(DestinationsImpl.home) {
-            Home(navController)
+            Home(navController, context)
         }
         composable(DestinationsImpl.profile) {
             Profile(navController, context)
